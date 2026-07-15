@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina — Young Wine for Young Generation</title>
+  <meta name="description" content="Справжнє вино з малих виноробень у банках із простими назвами. Десять країн, один найкращий сорт із кожної. Запитай SamiAI, яка банка твоя." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Перейти до вмісту</a>
+
+  <header class="topbar" data-topbar>
+    <a class="wordmark" href="#top" aria-label="Lumina — на головну">LUM<span class="i-grape">I</span>NA</a>
+    <nav class="nav" aria-label="Основна навігація" data-nav>
+      <a href="#wines">Вина</a>
+      <a href="#story">Історія</a>
+      <a href="#parties">Вечірки</a>
+      <button type="button" class="nav-link-btn" data-open-subscribe>Підписка</button>
+      <button type="button" class="btn btn--crush btn--small" data-open-samiklie>Запитати SamiAI</button>
+      <span class="lang-switch"><a href="index.html">EN</a><a href="uk.html" aria-current="page">УКР</a></span>
+    </nav>
+    <button type="button" class="nav-toggle" aria-label="Відкрити меню" aria-expanded="false" data-nav-toggle>
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="brand-open">
+        <p class="close-mark">LUM<span class="i-grape i-grape--big">I</span>NA</p>
+        <h1 class="brand-slogan">Young Wine for Young Generation</h1>
+        <p class="brand-sub">Просте, як банка. Справжнє, як виноградник. Почни з одного ковтка.</p>
+      </div>
+
+      <figure class="brand-photo">
+        <img src="assets/lumina-party-hero.png" alt="Друзі піднімають банки Lumina на вечірці на даху в золоту годину" loading="eager" />
+        <figcaption>Друзі зустрічаються з Lumina</figcaption>
+      </figure>
+
+      <div class="hero-copy">
+        <h2 class="hero-title">Хороше вино роками сиділо <em>під корком.</em></h2>
+        <p class="hero-sub">
+          Тепер життя проходить на дахах, пляжах і фінішних прямих —
+          там, куди пляшку не візьмеш. Lumina бере справжнє вино
+          з малих виноробень і закриває його в банку. А банку
+          береш із собою куди хочеш.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- WINES: the shelf -->
+    <section class="wines" id="wines">
+      <div class="section-head">
+        <p class="eyebrow">Вина</p>
+        <h2>Вино, що вийшло з пляшки —<br /><em>щоб пасувати твоєму життю.</em></h2>
+        <p class="section-lead">
+          Ми зібрали найкраще з десяти винних країн: по одному сорту,
+          який там люблять найбільше. На банці — ім'я винороба,
+          за QR-кодом — його історія. А для твоєї вечірки
+          завжди знайдеться своя банка. Гортай полицю.
+        </p>
+      </div>
+
+      <div class="shelf-wrap">
+        <button type="button" class="shelf-arrow shelf-arrow--prev" data-shelf-prev aria-label="Гортати вина ліворуч">←</button>
+        <ul class="shelf" data-shelf>
+          <li class="can-card" style="--can:#F0C75E; --can-ink:#2A1810">
+            <img src="assets/lumina-v2-front-italy.png" alt="Банка Gold Fizz" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Gold Fizz</h3>
+              <p class="can-origin">Італія · Просекко</p>
+              <p class="can-note">Просекко, з якого починаються танці. Груша, бульбашки і жодного приводу чекати.</p>
+              <p class="can-maker">Винороб: Марко Россі</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#1E5C46; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-spain-b.png" alt="Банка Green Pulse" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Green Pulse</h3>
+              <p class="can-origin">Іспанія · Альбаріньо</p>
+              <p class="can-note">Біле, що пахне морем. Для спекотного даху і друзів, які завжди спізнюються.</p>
+              <p class="can-maker">Винороб: Хав'єр Моралес</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#3AA9D6; --can-ink:#2A1810">
+            <img src="assets/lumina-v2-front-greece.png" alt="Банка Island Light" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Island Light</h3>
+              <p class="can-origin">Греція · Ассіртіко</p>
+              <p class="can-note">Сонце Егейського моря в алюмінії. Бери на пляж — келих не потрібен.</p>
+              <p class="can-maker">Винороб: Нікос Пападопулос</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#8B1E3F; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-georgia-b.png" alt="Банка Amber Night" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Amber Night</h3>
+              <p class="can-origin">Грузія · Сапераві</p>
+              <p class="can-note">Сапераві з батьківщини вина. Глибоке, пряне, для розмов до ранку.</p>
+              <p class="can-maker">Винороб: Ніно Берідзе</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#C0392B; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-california-b.png" alt="Банка Coast Line" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Coast Line</h3>
+              <p class="can-origin">Каліфорнія · Піно Нуар</p>
+              <p class="can-note">Каліфорнійське легке червоне кольору заходу сонця. Несерйозне — і цим прекрасне.</p>
+              <p class="can-maker">Винороб: Софія Мартінес</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#C97A2E; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-france.png" alt="Банка Sunset Crush" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Sunset Crush</h3>
+              <p class="can-origin">Франція · Гаме</p>
+              <p class="can-note">Червоне без пафосу: яскрава вишня, легкі ноги, гучна музика.</p>
+              <p class="can-maker">Винороб: Клер Дюбуа</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#7C8F3A; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-portugal.png" alt="Банка River Fizz" loading="lazy" />
+            <div class="can-card-body">
+              <h3>River Fizz</h3>
+              <p class="can-origin">Португалія · Віньйо Верде</p>
+              <p class="can-note">Грає бульбашками, як річка на порогах. Народжене для пікніків.</p>
+              <p class="can-maker">Винороб: Жуан Феррейра</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#4A2E68; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-argentina.png" alt="Банка High Altitude" loading="lazy" />
+            <div class="can-card-body">
+              <h3>High Altitude</h3>
+              <p class="can-origin">Аргентина · Мальбек</p>
+              <p class="can-note">Мальбек з гір Мендоси. Для перемог — великих і не дуже.</p>
+              <p class="can-maker">Винороб: Лусія Мендоса</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#223A63; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-ukraine.png" alt="Банка Steppe Spark" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Steppe Spark</h3>
+              <p class="can-origin">Україна · Одеса Блек</p>
+              <p class="can-note">Іскристе червоне з-під широкого степового неба. Хрустке, як перший мороз.</p>
+              <p class="can-maker">Винороб: Олег Коваленко</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#E4D8BC; --can-ink:#2A1810">
+            <img src="assets/lumina-v2-front-southafrica.png" alt="Банка Wild Cape" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Wild Cape</h3>
+              <p class="can-origin">ПАР · Шенен Блан</p>
+              <p class="can-note">Шенен блан з краю світу. Стиглий фрукт із диким характером.</p>
+              <p class="can-maker">Винороб: Танді Мбекі</p>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="shelf-arrow shelf-arrow--next" data-shelf-next aria-label="Гортати вина праворуч">→</button>
+      </div>
+
+      <div class="wines-cta">
+        <p>Не можеш обрати між Італією та Грузією?</p>
+        <button type="button" class="btn btn--crush" data-open-samiklie>Нехай SamiAI розсудить</button>
+      </div>
+    </section>
+
+    <!-- STRESS RELIEF -->
+    <section class="close">
+      <div class="section-head">
+        <p class="eyebrow">Старіше, ніж офіс</p>
+        <h2>Вино знімає напругу важкого дня <em>вже 6000 років.</em></h2>
+        <p class="section-lead">
+          Задовго до офісів, дедлайнів і недільного суму людство робило те саме:
+          наприкінці дня видихало з келихом у руці. Форма змінювалась. Причина —
+          ніколи.
+        </p>
+      </div>
+
+      <figure class="brand-photo brand-photo--wide close-photo">
+        <img src="assets/lumina-restaurant-unwind.png" alt="Пара відпочиває після важкого дня за столиком при свічках, келих вина поруч із банкою Lumina" loading="lazy" />
+        <figcaption>Важкий день, відпущений разом з Lumina</figcaption>
+      </figure>
+    </section>
+
+    <!-- STORY -->
+    <section class="story" id="story">
+      <div class="story-grid">
+        <div class="story-copy">
+          <p class="eyebrow">Чому банка</p>
+          <h2>Вино нарешті <em>розслабилось.</em></h2>
+          <p>
+            Століттями вино вимагало правильний келих, правильну температуру
+            і правильні слова. Забудь. Найкращі вечори не бувають правильними —
+            вони бувають несподіваними. Тепер вино до них готове так само, як ти:
+            холодне, відкривається одним рухом і не питає, чи вмієш ти його пити.
+          </p>
+          <ul class="story-points">
+            <li><strong>Тільки виноград.</strong> Без цукру, без порошків, без магії з пробірки. Малі виноробні, чесна робота.</li>
+            <li><strong>За банкою — людина.</strong> Марко з Венето. Ніно з Кахеті. Вони зробили це вино руками — і поставили на ньому своє ім'я.</li>
+            <li><strong>30 секунд — і ти там.</strong> Скануй QR і дивись виноградник, де народилося те, що зараз у тебе в руці.</li>
+          </ul>
+        </div>
+        <figure class="story-media">
+          <img src="assets/lumina-v2-back-italy.png" alt="Зворот банки Lumina з історією винороба та QR-кодом" loading="lazy" />
+          <figcaption>Скануй. Виноградник уже чекає.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SAMIAI -->
+    <section class="samiklie" id="samiklie">
+      <div class="samiklie-grid">
+        <div class="samiklie-copy">
+          <p class="eyebrow">AI-застосунок</p>
+          <h2>Скажи SamiAI, який у тебе вечір. <em>Він наллє.</em></h2>
+          <p>
+            Пляж, перемога, гостра вечеря чи тихий дах — розкажи своїми
+            словами, без жодних термінів. SamiAI підбере банку під настрій,
+            а купити чи оформити підписку можна одним дотиком.
+          </p>
+          <button type="button" class="btn btn--crush" data-open-samiklie>Спробувати SamiAI</button>
+        </div>
+        <div class="samiklie-demo" aria-hidden="true">
+          <p class="demo-caption">Так виглядає розмова з SamiAI</p>
+          <div class="demo-phone">
+            <div class="demo-phone-head">
+              <span class="demo-phone-dot"></span>
+              <strong>SamiAI</strong>
+              <span class="demo-phone-status">Онлайн</span>
+            </div>
+            <div class="demo-phone-body">
+              <div class="demo-bubble demo-bubble--user">Щось ігристе на день народження на даху</div>
+              <div class="demo-bubble demo-bubble--bot">Тримай: <strong>Gold Fizz</strong> — просекко від Марко Россі з Венето. З нього починаються танці.</div>
+              <div class="demo-card">
+                <span class="demo-swatch" style="--can:#F0C75E"></span>
+                <div>
+                  <strong>Gold Fizz</strong>
+                  <span>Італія · Просекко · 250 мл</span>
+                </div>
+                <span class="demo-buy">Купити</span>
+              </div>
+            </div>
+            <div class="demo-phone-input">
+              <span>Опиши свій вечір…</span>
+              <span class="demo-send">➤</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTIES -->
+    <section class="parties" id="parties">
+      <div class="section-head">
+        <p class="eyebrow">Вино і вечірка</p>
+        <h2>Музика, танці, <em>холодні банки.</em></h2>
+        <p class="section-lead">На нашій виноробні, у денних і нічних клубах міста. Квитки — там, де ти їх завжди купуєш.</p>
+      </div>
+      <ul class="party-list">
+        <li>
+          <time datetime="2026-07-25"><span>25</span>лип</time>
+          <div class="party-info">
+            <h3>Рейв золотої години</h3>
+            <p>Виноробня Lumina · Сонома · від заходу сонця до останнього танцю</p>
+          </div>
+          <span class="party-platform">Resident Advisor</span>
+        </li>
+        <li>
+          <time datetime="2026-08-02"><span>02</span>сер</time>
+          <div class="party-info">
+            <h3>Після забігу: тост банками</h3>
+            <p>Марафонське містечко · просто за фінішною лінією</p>
+          </div>
+          <span class="party-platform">Eventbrite</span>
+        </li>
+        <li>
+          <time datetime="2026-08-14"><span>14</span>сер</time>
+          <div class="party-info">
+            <h3>П'ятничний набіг на холодильник</h3>
+            <p>Клуб Nova · починаємо вдень, закінчуємо вночі</p>
+          </div>
+          <span class="party-platform">Dice</span>
+        </li>
+        <li>
+          <time datetime="2026-09-12"><span>12</span>вер</time>
+          <div class="party-info">
+            <h3>Танці серед врожаю</h3>
+            <p>Просто під лозами · Виноробня Lumina</p>
+          </div>
+          <span class="party-platform">Shotgun</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CLOSE -->
+    <section class="close">
+      <h2>Твоя банка <em>вже холодна.</em></h2>
+      <p>Одне повідомлення SamiAI — і вечір складеться.</p>
+      <button type="button" class="btn btn--crush" data-open-samiklie>Знайти мою банку</button>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span class="wordmark wordmark--foot">LUM<span class="i-grape">I</span>NA</span>
+    <p>Stanford Startup Education · Прототип, модуль 2 · Вживай відповідально, 21+</p>
+  </footer>
+
+  <!-- SamiAI overlay -->
+  <div class="overlay" data-overlay hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="samiklie-title">
+      <header class="sheet-head">
+        <div>
+          <p class="eyebrow">Твій AI-сомельє без снобізму</p>
+          <h2 id="samiklie-title">SamiAI</h2>
+        </div>
+        <button type="button" class="sheet-x" data-close-overlay aria-label="Закрити">×</button>
+      </header>
+      <div class="chat" data-chat>
+        <div class="bubble bubble--bot">Привіт! Розкажи, який у тебе план: вечірка, пляж, перемога, набіг на холодильник, гостра вечеря… Я знаю, яка банка тобі потрібна.</div>
+      </div>
+      <form class="chat-form" data-chat-form>
+        <label class="sr-only" for="chat-input">Повідомлення для SamiAI</label>
+        <input id="chat-input" type="text" placeholder="Щось легке та ігристе для даху…" required autocomplete="off" />
+        <button type="submit" class="btn btn--crush btn--small">Надіслати</button>
+      </form>
+      <div class="reco" data-chat-reco hidden></div>
+    </div>
+  </div>
+
+  <!-- Subscription overlay -->
+  <div class="overlay" data-subscribe-overlay hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="subscribe-title">
+      <header class="sheet-head">
+        <div>
+          <p class="eyebrow">Lumina Club</p>
+          <h2 id="subscribe-title">Приєднайся до Lumina Club</h2>
+        </div>
+        <button type="button" class="sheet-x" data-close-subscribe aria-label="Закрити">×</button>
+      </header>
+      <p class="sheet-lead">Обери свою коробку на місяць. Пропускай, міняй або скасовуй — без питань.</p>
+      <ul class="club-perks">
+        <li><span class="perk-icon" aria-hidden="true">🍷</span> Банки щомісяця — щоразу нова країна</li>
+        <li><span class="perk-icon" aria-hidden="true">🎉</span> Безкоштовний вхід на будь-яку вечірку Lumina в будь-якій країні</li>
+        <li><span class="perk-icon" aria-hidden="true">↻</span> Пропускай, міняй або скасовуй — без питань</li>
+      </ul>
+      <form class="subscribe-form" data-subscribe-form>
+        <div class="vine-picks">
+          <label><input type="radio" name="plan" value="Дослідник · 6 банок" checked /><span><strong>Дослідник · $29 / міс</strong>6 банок — щомісяця нова країна</span></label>
+          <label><input type="radio" name="plan" value="Вечірка · 12 банок" /><span><strong>Вечірка · $54 / міс</strong>12 банок: твої улюблені плюс два сюрпризи від нас</span></label>
+          <label><input type="radio" name="plan" value="Світове турне · 10 банок" /><span><strong>Світове турне · $49 / міс</strong>Усі десять країн, по банці з кожної</span></label>
+        </div>
+        <label class="field">
+          <span>Email для новин про доставку</span>
+          <input type="email" name="email" placeholder="ty@example.com" required autocomplete="email" />
+        </label>
+        <button type="submit" class="btn btn--crush">Оформити підписку</button>
+        <p class="status" data-subscribe-status role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina — Young Wine for Young Generation</title>
+  <meta name="description" content="Real wine from small wineries, in cans with simple names. Ten countries, one great sort each. Ask SamiAI which can is yours." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar" data-topbar>
+    <a class="wordmark" href="#top" aria-label="Lumina home">LUM<span class="i-grape">I</span>NA</a>
+    <nav class="nav" aria-label="Primary" data-nav>
+      <a href="#wines">Wines</a>
+      <a href="#story">Story</a>
+      <a href="#parties">Parties</a>
+      <button type="button" class="nav-link-btn" data-open-subscribe>Subscribe</button>
+      <button type="button" class="btn btn--crush btn--small" data-open-samiklie>Ask SamiAI</button>
+      <span class="lang-switch"><a href="index.html" aria-current="page">EN</a><a href="uk.html">УКР</a></span>
+    </nav>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="brand-open">
+        <p class="close-mark">LUM<span class="i-grape i-grape--big">I</span>NA</p>
+        <h1 class="brand-slogan">Young Wine for Young Generation</h1>
+      </div>
+
+      <figure class="brand-photo">
+        <img src="assets/lumina-party-hero.png" alt="Friends cheering and toasting with Lumina cans at a golden-hour rooftop party" loading="eager" />
+        <figcaption>Friends meeting with the Lumina</figcaption>
+      </figure>
+
+      <div class="hero-copy">
+        <h2 class="hero-title">Great wine got stuck <em>behind the cork.</em></h2>
+        <p class="hero-sub">
+          Rooftops, beach days, finish lines: life moved outside, and the
+          bottle stayed home. Lumina packs real wine from small wineries
+          into cans that go wherever the evening does.
+        </p>
+      </div>
+
+      <figure class="brand-photo brand-photo--wide">
+        <img src="assets/lumina-greece-dayclub.png" alt="A Santorini day club, friends dancing by the sea while someone takes a Lumina can from a tiered ice stand on the table" loading="lazy" />
+        <figcaption>Hard day, released with the Lumina</figcaption>
+      </figure>
+
+      <div class="hero-events" id="parties">
+        <p class="hero-events-label">Upcoming · Lumina Events</p>
+        <ul class="hero-events-list">
+          <li>
+            <time datetime="2026-07-25"><span>25</span>Jul</time>
+            <div>
+              <h4>Golden Hour Vineyard Rave</h4>
+              <p>Lumina Winery · Sonoma</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-08-02"><span>02</span>Aug</time>
+            <div>
+              <h4>After the Run: Can Toast</h4>
+              <p>City Marathon Village</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-08-14"><span>14</span>Aug</time>
+            <div>
+              <h4>Fridge Raid Fridays</h4>
+              <p>Club Nova</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-09-06"><span>06</span>Sep</time>
+            <div>
+              <h4>Let's Dance with the Lumina</h4>
+              <p>Santorini Day Club</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- WINES: the shelf -->
+    <section class="wines" id="wines">
+      <div class="section-head">
+        <p class="eyebrow">The wines</p>
+        <h2>Wine left the bottle <em>to match your lifestyle.</em></h2>
+        <p class="section-lead">
+          We brought the whole wine world to you: the best sort from every top
+          wine country, the winemaker's name on the front, their story behind
+          the QR on the back. And always the right can for your party.
+          Scroll the shelf.
+        </p>
+      </div>
+
+      <div class="shelf-wrap">
+        <button type="button" class="shelf-arrow shelf-arrow--prev" data-shelf-prev aria-label="Scroll wines left">←</button>
+        <ul class="shelf" data-shelf>
+          <li class="can-card" style="--can:#F0C75E; --can-ink:#2A1810">
+            <img src="assets/lumina-v2-front-italy.png" alt="Gold Fizz can" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Gold Fizz</h3>
+              <p class="can-origin">Italy · Prosecco</p>
+              <p class="can-note">Bubbles for dancing. Soft pear, easy toast.</p>
+              <p class="can-maker">Winemaker: Marco Rossi</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#1E5C46; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-spain-b.png" alt="Green Pulse can" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Green Pulse</h3>
+              <p class="can-origin">Spain · Albariño</p>
+              <p class="can-note">Salt-kissed white, built for hot roofs.</p>
+              <p class="can-maker">Winemaker: Javier Morales</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#3AA9D6; --can-ink:#2A1810">
+            <img src="assets/lumina-v2-front-greece.png" alt="Island Light can" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Island Light</h3>
+              <p class="can-origin">Greece · Assyrtiko</p>
+              <p class="can-note">Sea-breeze citrus. The beach hero's can.</p>
+              <p class="can-maker">Winemaker: Nikos Papadopoulos</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#8B1E3F; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-georgia-b.png" alt="Amber Night can" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Amber Night</h3>
+              <p class="can-origin">Georgia · Saperavi</p>
+              <p class="can-note">Where wine began. Deep, spicy, long tables.</p>
+              <p class="can-maker">Winemaker: Nino Beridze</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#C0392B; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-california-b.png" alt="Coast Line can" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Coast Line</h3>
+              <p class="can-origin">California · Pinot Noir</p>
+              <p class="can-note">Light-bodied red, golden-hour ease. Never takes itself seriously.</p>
+              <p class="can-maker">Winemaker: Sofia Martinez</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#C97A2E; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-france.png" alt="Sunset Crush can" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Sunset Crush</h3>
+              <p class="can-origin">France · Gamay</p>
+              <p class="can-note">Bright cherry, low drama. Party red.</p>
+              <p class="can-maker">Winemaker: Claire Dubois</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#7C8F3A; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-portugal.png" alt="River Fizz can" loading="lazy" />
+            <div class="can-card-body">
+              <h3>River Fizz</h3>
+              <p class="can-origin">Portugal · Vinho Verde</p>
+              <p class="can-note">A little gas, a lot of picnic energy.</p>
+              <p class="can-maker">Winemaker: João Ferreira</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#4A2E68; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-argentina.png" alt="High Altitude can" loading="lazy" />
+            <div class="can-card-body">
+              <h3>High Altitude</h3>
+              <p class="can-origin">Argentina · Malbec</p>
+              <p class="can-note">Plush and dark. For wins that deserve a pour.</p>
+              <p class="can-maker">Winemaker: Lucía Mendoza</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#223A63; --can-ink:#FFF6EC">
+            <img src="assets/lumina-v2-front-ukraine.png" alt="Steppe Spark can" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Steppe Spark</h3>
+              <p class="can-origin">Ukraine · Odessa Black</p>
+              <p class="can-note">Sparkling red, crisp and electric under a wide-open sky.</p>
+              <p class="can-maker">Winemaker: Oleh Kovalenko</p>
+            </div>
+          </li>
+          <li class="can-card" style="--can:#E4D8BC; --can-ink:#2A1810">
+            <img src="assets/lumina-v2-front-southafrica.png" alt="Wild Cape can" loading="lazy" />
+            <div class="can-card-body">
+              <h3>Wild Cape</h3>
+              <p class="can-origin">South Africa · Chenin Blanc</p>
+              <p class="can-note">Sun-ripe orchard fruit with a wild edge.</p>
+              <p class="can-maker">Winemaker: Thandi Mbeki</p>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="shelf-arrow shelf-arrow--next" data-shelf-next aria-label="Scroll wines right">→</button>
+      </div>
+    </section>
+
+    <!-- STRESS RELIEF -->
+    <section class="close">
+      <div class="section-head">
+        <p class="eyebrow">Older than the 9-to-5</p>
+        <h2>Wine's taken the edge off a hard day <em>for 6,000 years.</em></h2>
+        <p class="section-lead">
+          Long before offices, deadlines, or Sunday-night dread, people were doing
+          exactly this: winding down with a glass at the end of the day. The ritual
+          changed shape. The reason for it never did.
+        </p>
+      </div>
+
+      <figure class="brand-photo brand-photo--wide close-photo">
+        <img src="assets/lumina-restaurant-unwind.png" alt="A couple unwinding after a long day at a candlelit restaurant table, a glass of wine next to a Lumina can" loading="lazy" />
+      </figure>
+    </section>
+
+    <!-- STORY -->
+    <section class="story" id="story">
+      <div class="story-grid">
+        <div class="story-copy">
+          <p class="eyebrow">The curation</p>
+          <h2>Thousands of wines. <em>We already chose.</em></h2>
+          <p>
+            Every wine country makes thousands of bottles, and you don't have
+            time to taste your way through them. So we did. One sort, the
+            best one, from each place. You don't pick a wine, you pick a can.
+          </p>
+          <ul class="story-points">
+            <li><strong>Already chosen.</strong> Small wineries, one standout sort per country, nothing else made the can.</li>
+            <li><strong>The winemaker on the front.</strong> The real person behind the choice, not a castle drawing.</li>
+            <li><strong>The proof on the back.</strong> Scan the QR and see exactly why this one won.</li>
+          </ul>
+        </div>
+        <figure class="story-media">
+          <img src="assets/lumina-v2-back-italy.png" alt="Back of a Lumina can showing the winemaker's story and QR code" loading="lazy" />
+          <figcaption>Scan me. Meet the vineyard.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- TIMELINE: interactive scroll -->
+    <section class="ages" aria-label="Wine through the ages">
+      <div class="ages-scroller" data-ages>
+        <div class="ages-sticky">
+          <div class="ages-head">
+            <p class="eyebrow">Six thousand years of practice</p>
+            <h2>Same grape. <em>New vessel.</em></h2>
+            <p class="ages-head-lead">Keep scrolling. The story moves with you.</p>
+          </div>
+
+          <div class="ages-cols">
+          <ol class="ages-rail" role="group" aria-label="Jump to an era">
+            <li data-age-jump="0" class="is-active">
+              <span class="rail-dot"></span>
+              <span class="rail-era">4000 BC</span>
+              <h3>The qvevri</h3>
+              <p>Georgia buries clay vessels of fermenting grapes. Wine is born underground.</p>
+            </li>
+            <li data-age-jump="1">
+              <span class="rail-dot"></span>
+              <span class="rail-era">Antiquity</span>
+              <h3>The amphora</h3>
+              <p>Greeks and Romans pour wine by the sea, at feasts, at games. Wine is social.</p>
+            </li>
+            <li data-age-jump="2">
+              <span class="rail-dot"></span>
+              <span class="rail-era">1600s</span>
+              <h3>The bottle</h3>
+              <p>Glass and cork lock wine into cellars, rituals, and a vocabulary of its own.</p>
+            </li>
+            <li data-age-jump="3">
+              <span class="rail-dot"></span>
+              <span class="rail-era">Now</span>
+              <h3>The can</h3>
+              <p>Same craft, same land, no corkscrew. Wine goes back to where people are.</p>
+            </li>
+          </ol>
+
+          <div class="ages-visual">
+            <img src="assets/age-qvevri.png" alt="Line illustration of a clay qvevri buried among Georgian vineyards" data-age-img="0" class="is-active" />
+            <img src="assets/age-amphora.png" alt="Line illustration of a Greek amphora and sailing ship" data-age-img="1" />
+            <img src="assets/age-bottle.png" alt="Line illustration of a corked bottle in a stone cellar" data-age-img="2" />
+            <img src="assets/age-can.png" alt="Line illustration of a can and dancers on a rooftop" data-age-img="3" />
+          </div>
+          </div>
+        </div>
+
+        <div class="ages-step ages-step--first" data-age-step="0"></div>
+        <div class="ages-step" data-age-step="1"></div>
+        <div class="ages-step" data-age-step="2"></div>
+        <div class="ages-step" data-age-step="3"></div>
+      </div>
+    </section>
+
+    <!-- SAMIKLIE -->
+    <section class="samiklie" id="samiklie">
+      <div class="samiklie-grid">
+        <div class="samiklie-copy">
+          <p class="eyebrow">The AI app</p>
+          <h2>Tell SamiAI the vibe. <em>It pours.</em></h2>
+          <p>
+            Beach day, big win, spicy dinner, quiet roof: describe it in your own words.
+            SamiAI matches you to a can, then you buy it or subscribe in one tap.
+            No tasting notes homework, ever.
+          </p>
+          <button type="button" class="btn btn--crush" data-open-samiklie>Try SamiAI now</button>
+        </div>
+        <div class="samiklie-demo" aria-hidden="true">
+          <p class="demo-caption">What chatting with SamiAI looks like</p>
+          <div class="demo-phone">
+            <div class="demo-phone-head">
+              <span class="demo-phone-dot"></span>
+              <strong>SamiAI</strong>
+              <span class="demo-phone-status">Online now</span>
+            </div>
+            <div class="demo-phone-body">
+              <div class="demo-bubble demo-bubble--user">Something bubbly for a rooftop birthday</div>
+              <div class="demo-bubble demo-bubble--bot">Easy. <strong>Gold Fizz</strong>, Prosecco from Marco Rossi in Veneto. Bubbles for dancing.</div>
+              <div class="demo-card">
+                <span class="demo-swatch" style="--can:#F0C75E"></span>
+                <div>
+                  <strong>Gold Fizz</strong>
+                  <span>Italy · Prosecco · 250 ml</span>
+                </div>
+                <span class="demo-buy">Buy</span>
+              </div>
+            </div>
+            <div class="demo-phone-input">
+              <span>Describe your vibe…</span>
+              <span class="demo-send">➤</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSE -->
+    <section class="close">
+      <h2>Your can is <em>already cold.</em></h2>
+      <p>One message to SamiAI and the evening is sorted.</p>
+      <button type="button" class="btn btn--crush" data-open-samiklie>Find my can</button>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span class="wordmark wordmark--foot">LUM<span class="i-grape">I</span>NA</span>
+    <p>Stanford Startup Education · Module 2 prototype · Please drink responsibly, 21+</p>
+  </footer>
+
+  <!-- SamiAI overlay -->
+  <div class="overlay" data-overlay hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="samiklie-title">
+      <header class="sheet-head">
+        <div>
+          <p class="eyebrow">Your AI sommelier, minus the attitude</p>
+          <h2 id="samiklie-title">SamiAI</h2>
+        </div>
+        <button type="button" class="sheet-x" data-close-overlay aria-label="Close">×</button>
+      </header>
+      <div class="chat" data-chat>
+        <div class="bubble bubble--bot">Hey! Tell me the vibe: party, beach, win, fridge raid, spicy dinner, bubbly, red, chill… I'll point you to a can.</div>
+      </div>
+      <form class="chat-form" data-chat-form>
+        <label class="sr-only" for="chat-input">Message SamiAI</label>
+        <input id="chat-input" type="text" placeholder="Something light and bubbly for a roof…" required autocomplete="off" />
+        <button type="submit" class="btn btn--crush btn--small">Send</button>
+      </form>
+      <div class="reco" data-chat-reco hidden></div>
+    </div>
+  </div>
+
+  <!-- Subscription overlay -->
+  <div class="overlay" data-subscribe-overlay hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="subscribe-title">
+      <header class="sheet-head">
+        <div>
+          <p class="eyebrow">Lumina Club</p>
+          <h2 id="subscribe-title">Join Lumina Club</h2>
+        </div>
+        <button type="button" class="sheet-x" data-close-subscribe aria-label="Close">×</button>
+      </header>
+      <p class="sheet-lead">Pick a monthly box. Skip, swap, or cancel any time.</p>
+      <ul class="club-perks">
+        <li><span class="perk-icon" aria-hidden="true">🍷</span> Monthly cans, a new country every box</li>
+        <li><span class="perk-icon" aria-hidden="true">🎉</span> Free access to any Lumina party, worldwide</li>
+        <li><span class="perk-icon" aria-hidden="true">↻</span> Skip, swap, or cancel any time</li>
+      </ul>
+      <form class="subscribe-form" data-subscribe-form>
+        <div class="vine-picks">
+          <label><input type="radio" name="plan" value="Explorer · 6 cans" checked /><span><strong>Explorer · $29 / month</strong>6 cans, a new country every box</span></label>
+          <label><input type="radio" name="plan" value="Party · 12 cans" /><span><strong>Party · $54 / month</strong>12 cans, your favorites plus two surprises</span></label>
+          <label><input type="radio" name="plan" value="World Tour · 10 cans" /><span><strong>World Tour · $49 / month</strong>All ten countries, one can each</span></label>
+        </div>
+        <label class="field">
+          <span>Email for delivery updates</span>
+          <input type="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+        </label>
+        <button type="submit" class="btn btn--crush">Submit subscription</button>
+        <p class="status" data-subscribe-status role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
