@@ -1,0 +1,13 @@
+{
+  "name": "camp-checker",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Headless checker for ReserveAmerica campsite availability (Anthony Chabot, East Bay parks)",
+  "scripts": {
+    "check": "node check-availability.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.50.0"
+  }
+}
